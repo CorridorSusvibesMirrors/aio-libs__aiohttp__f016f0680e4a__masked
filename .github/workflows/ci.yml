@@ -41,7 +41,7 @@ jobs:
         restore-keys: |
             pip-lint-
     - name: Install dependencies
-      uses: py-actions/py-dependency-install@v2.1.0
+      uses: py-actions/py-dependency-install@v4
       with:
         path: requirements/lint.txt
     - name: Install self
@@ -197,7 +197,7 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@v2.2.2
     - name: Install cython
-      uses: py-actions/py-dependency-install@v2
+      uses: py-actions/py-dependency-install@v4
       with:
         path: requirements/cython.txt
     - name: Restore llhttp generated files
@@ -256,7 +256,7 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@v2.2.2
     - name: Install cython
-      uses: py-actions/py-dependency-install@v2
+      uses: py-actions/py-dependency-install@v4
       with:
         path: requirements/cython.txt
     - name: Restore llhttp generated files
